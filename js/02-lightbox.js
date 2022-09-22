@@ -2,6 +2,13 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 const ulRef = document.querySelector('.gallery');
 
+    const lightbox = new SimpleLightbox('.gallery a', {
+        captions: 'true',
+        captionsData: 'alt',
+        captionPosition: 'bottom',
+        captionDelay: '250'
+}); 
+
 function createGallery(galleryItems) {
     return galleryItems
         .map(({ preview, original, description }) => {
@@ -23,10 +30,4 @@ function clickHandler(event) {
     if (!event.target.classList.contains('gallery__image')) {
         return;
     }
-    const lightbox = new SimpleLightbox('.gallery a', {
-        captions: 'true',
-        captionsData: 'alt',
-        captionPosition: 'bottom',
-        captionDelay: '250'
-}); 
 }

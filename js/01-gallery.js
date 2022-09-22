@@ -38,7 +38,9 @@ function clickHandler(event) {
     window.addEventListener("keydown", (event) => {
         event.preventDefault();
             if (event.code === "Escape") {
-            instance.close();
+                onShow: (instance) => {
+                    instance.element().querySelector('img').onclick = instance.close;
+    }
         }
         
     })
