@@ -1,13 +1,8 @@
+
+
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 const ulRef = document.querySelector('.gallery');
-
-    const lightbox = new SimpleLightbox('.gallery a', {
-        captions: 'true',
-        captionsData: 'alt',
-        captionPosition: 'bottom',
-        captionDelay: '250'
-}); 
 
 function createGallery(galleryItems) {
     return galleryItems
@@ -31,3 +26,11 @@ function clickHandler(event) {
         return;
     }
 }
+const lightbox = new SimpleLightbox('.gallery a',
+    {
+        captions: 'true',
+        captionsData: 'alt',
+        captionPosition: 'bottom',
+        captionDelay: '250'
+    }
+); 
