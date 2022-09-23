@@ -35,39 +35,9 @@ function clickHandler(event) {
     <img src="${source}" width="800" height="600">
  
 `,
-        // {
-        //     onShow: (instance) => {
-        //         window.addEventListener("keydown", (event) => {
-        //             event.preventDefault();
-        //             if (event.code === "Escape") {
-        //                 instance.element().keydown = instance.close;
-        //             }
-        //         }
-        //         )
-        //     }
-        // },
-        // {
-        //     onclose: (instance) => {
-        //         window.removeEventListener("keydown", (event) => {
-        //             if (event.code === "Escape") {
-        //                 instance.close;
-        //             }
-        //         }
-        //         )
-        //     }
-        // }
+
     )
     
     instance.show();
 
-    // window.addEventListener("keydown", (event) => {
-    //     event.preventDefault();
-    //         if (event.code === "Escape") {
-    //                onShow: (instance) => {
-    //     instance.element().querySelector('a').onclick = instance.close
-    // }
-           
-    //     }
-        
-    // 
 }
